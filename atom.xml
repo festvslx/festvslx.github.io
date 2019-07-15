@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>festvslx</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-07-15T07:19:22.218Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>festvslx</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>markdown基本语法</title>
+    <link href="http://yoursite.com/2019/07/15/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/07/15/markdown基本语法/</id>
+    <published>2019-07-15T02:56:49.000Z</published>
+    <updated>2019-07-15T07:19:22.218Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="markdown-基本教程"><a href="#markdown-基本教程" class="headerlink" title="markdown 基本教程"></a>markdown 基本教程</h1><p>第一次使用markdown，所以去找了找资料，把一些基本的用法记录下来，供以后查看。</p><a id="more"></a><hr><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h2><p>   在markdown中几级标题就在前方加#符号即可，注意要有空格。</p><pre><code># 这是一级标题## 这是二级标题### 这是三级标题</code></pre><h2 id="2-换行"><a href="#2-换行" class="headerlink" title="2. 换行"></a>2. 换行</h2><p>   段落的换行是使用两个以上空格加上回车。</p><h2 id="3-字体"><a href="#3-字体" class="headerlink" title="3. 字体"></a>3. 字体</h2><ul><li>加粗<br> 要加粗的在加粗部分前后用两个*号包起来。</li><li>斜体<br> 要变斜体的用一个*号包起来。</li><li>斜体加粗<br> 要斜体加粗的用三个*号包起来。</li><li>删除线<br> 要删除线在前后用两个~~包起来。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**这是加粗的文字**</span><br><span class="line">*这是倾斜的文字*</span><br><span class="line">***这是斜体加粗的文字***</span><br><span class="line">~~这是加删除线的文字~~</span><br></pre></td></tr></table></figure></li></ul><p>效果如下：<br><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em><br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del></p><h2 id="4-代码块"><a href="#4-代码块" class="headerlink" title="4. 代码块"></a>4. 代码块</h2><ul><li>一段代码可以用反引号包起来表示</li><li>代码前加上制表符或者4个空格即可表示代码区块</li><li>也可以用3个反引号来表示一个区域的代码块<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">`print(&quot;hello world!&quot;)`</span><br><span class="line">(```)</span><br><span class="line">代码。。。。</span><br><span class="line">(```)</span><br><span class="line">注意这个括号没有只是为了防止转译</span><br></pre></td></tr></table></figure></li></ul><h2 id="5-区块"><a href="#5-区块" class="headerlink" title="5. 区块"></a>5. 区块</h2><p>   Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;区块内容</span><br><span class="line">&gt;区块内容</span><br></pre></td></tr></table></figure><h2 id="6-链接"><a href="#6-链接" class="headerlink" title="6. 链接"></a>6. 链接</h2><p>   链接的用法是 -&gt;<code>[链接名称](链接地址)</code></p><h2 id="7-图片"><a href="#7-图片" class="headerlink" title="7. 图片"></a>7. 图片</h2><p>   图片的用法如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br><span class="line">其中alt属性文本就是图片下面的文字，相当于图片的解释</span><br></pre></td></tr></table></figure><h2 id="8-列表"><a href="#8-列表" class="headerlink" title="8. 列表"></a>8. 列表</h2><p>8.1  有序列表<br>    有序列表直接用数字加上<code>.</code>号表示（有空格）<br>8.2  无序列表<br>    无序列表使用星号<code>*</code>、加号<code>+</code>或是减号<code>-</code>作为列表标记：<br>8.3 嵌套列表<br>    嵌套列表只需在子列表前加4个空格。</p><h2 id="9-表格"><a href="#9-表格" class="headerlink" title="9. 表格"></a>9. 表格</h2><p>Markdown 制作表格使用 <code>|</code> 来分隔不同的单元格，使用<code>-</code>来分隔表头和其他行。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br></pre></td></tr></table></figure><p>效果如下：<br>| 表头   | 表头   |<br>| —— | —— |<br>| 单元格 | 单元格 |<br>| 单元格 | 单元格 |</p><hr><p>markdown还支持HTML元素，数学公式等等，这里就不谈了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;markdown-基本教程&quot;&gt;&lt;a href=&quot;#markdown-基本教程&quot; class=&quot;headerlink&quot; title=&quot;markdown 基本教程&quot;&gt;&lt;/a&gt;markdown 基本教程&lt;/h1&gt;&lt;p&gt;第一次使用markdown，所以去找了找资料，把一些基本的用法记录下来，供以后查看。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo+GitHub</title>
+    <link href="http://yoursite.com/2019/07/14/hexo-GitHub/"/>
+    <id>http://yoursite.com/2019/07/14/hexo-GitHub/</id>
+    <published>2019-07-14T08:58:17.000Z</published>
+    <updated>2019-07-15T06:58:18.380Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h2 id="搭建准备"><a href="#搭建准备" class="headerlink" title="搭建准备"></a>搭建准备</h2><pre><code>1. 下载node.js 和 git 2. 在cmd或者git bash下安装hexo [npm install -g hexo]3. 安装好后即可初始化了，[hexo init  (folder)]</code></pre><hr><a id="more"></a><hr><h2 id="主题更改"><a href="#主题更改" class="headerlink" title="主题更改"></a>主题更改</h2><p>​        主题可以去网上搜索网上资源很多。</p><hr><h2 id="GitHub准备"><a href="#GitHub准备" class="headerlink" title="GitHub准备"></a>GitHub准备</h2><h3 id="1-首先要有GitHub账号-废话"><a href="#1-首先要有GitHub账号-废话" class="headerlink" title="1. 首先要有GitHub账号(废话)"></a>1. 首先要有GitHub账号(废话)</h3><pre><code>创建一个仓库，仓库名字有规范的必须是(账号名).github.io</code></pre><h3 id="2-配置ssh-key"><a href="#2-配置ssh-key" class="headerlink" title="2. 配置ssh key"></a>2. 配置ssh key</h3><pre><code>ssh key可以在git bash下输入ssh-keygen.exe，然后不断按回车。。。        一般公钥在c盘user里的.ssh文件夹里id_rsa.pub是公钥，id_rsa是私钥。        把公钥放到GitHub里就好。</code></pre><h3 id="3-配置文件"><a href="#3-配置文件" class="headerlink" title="3. 配置文件"></a>3. 配置文件</h3><pre><code>配置_config.yml中有关deploy的部分改为下面即可    deploy:        type: git        repository: git@github.com:(账号名)/(账号名).github.io.git        branch: master</code></pre><hr><h2 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h2><pre><code>上传前先安装一个插件在git 下输入 npm install hexo-deployer-git --save然后就可以输入hexo d上传到GitHub上了</code></pre><hr><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.codesheep.com" target="_blank" rel="noopener">www.codesheep.com</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h2 id=&quot;搭建准备&quot;&gt;&lt;a href=&quot;#搭建准备&quot; class=&quot;headerlink&quot; title=&quot;搭建准备&quot;&gt;&lt;/a&gt;搭建准备&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;1. 下载node.js 和 git 
+2. 在cmd或者git bash下安装hexo [npm install -g hexo]
+3. 安装好后即可初始化了，[hexo init  (folder)]&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
+    
+  </entry>
+  
+</feed>
