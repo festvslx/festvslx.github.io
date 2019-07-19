@@ -95,18 +95,18 @@
 
 
 
-  <meta name="description" content="Java基础学习（一） 1. Java的八大基本数据类型 byte  8位，有符号。 short  16位，有符号。 int  32位，有符号。">
+  <meta name="description" content="Java基础学习(三) 数组什么是数组数组是一种最简单的复合数据类型，它是有序数据的集合，数组中的每个元素具有相同的数据类型，可以用一个统一的数组名和不同的下标来唯一确定数组中的元素。根据数组的维度，可以将其分为一维数组、二维数组和多维数组等。 数组的初始化数据类型[] name = new 数据类型[长度]Java数组和C语言的数组差不多，但是功能更强大。Java的数组每个元素都有默认值，默认值">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java基础学习(一)">
-<meta property="og:url" content="http://yoursite.com/2019/07/16/Java基础学习-一/index.html">
+<meta property="og:title" content="Java基础学习(三)">
+<meta property="og:url" content="http://yoursite.com/2019/07/19/Java基础学习-三/index.html">
 <meta property="og:site_name" content="festvslx">
-<meta property="og:description" content="Java基础学习（一） 1. Java的八大基本数据类型 byte  8位，有符号。 short  16位，有符号。 int  32位，有符号。">
+<meta property="og:description" content="Java基础学习(三) 数组什么是数组数组是一种最简单的复合数据类型，它是有序数据的集合，数组中的每个元素具有相同的数据类型，可以用一个统一的数组名和不同的下标来唯一确定数组中的元素。根据数组的维度，可以将其分为一维数组、二维数组和多维数组等。 数组的初始化数据类型[] name = new 数据类型[长度]Java数组和C语言的数组差不多，但是功能更强大。Java的数组每个元素都有默认值，默认值">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-16T15:28:15.697Z">
+<meta property="og:updated_time" content="2019-07-19T08:40:07.810Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java基础学习(一)">
-<meta name="twitter:description" content="Java基础学习（一） 1. Java的八大基本数据类型 byte  8位，有符号。 short  16位，有符号。 int  32位，有符号。">
+<meta name="twitter:title" content="Java基础学习(三)">
+<meta name="twitter:description" content="Java基础学习(三) 数组什么是数组数组是一种最简单的复合数据类型，它是有序数据的集合，数组中的每个元素具有相同的数据类型，可以用一个统一的数组名和不同的下标来唯一确定数组中的元素。根据数组的维度，可以将其分为一维数组、二维数组和多维数组等。 数组的初始化数据类型[] name = new 数据类型[长度]Java数组和C语言的数组差不多，但是功能更强大。Java的数组每个元素都有默认值，默认值">
 
 
 
@@ -116,7 +116,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/07/16/Java基础学习-一/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/19/Java基础学习-三/">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>Java基础学习(一) | festvslx</title>
+  <title>Java基础学习(三) | festvslx</title>
   
 
 
@@ -333,7 +333,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/16/Java基础学习-一/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/19/Java基础学习-三/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="festvslx">
@@ -350,7 +350,7 @@
     
         
         
-          <h1 class="post-title" itemprop="name headline">Java基础学习(一)
+          <h1 class="post-title" itemprop="name headline">Java基础学习(三)
 
               
             
@@ -376,7 +376,7 @@
                 
               
     
-              <time title="创建时间：2019-07-16 23:21:01 / 修改时间：23:28:15" itemprop="dateCreated datePublished" datetime="2019-07-16T23:21:01+08:00">2019-07-16</time>
+              <time title="创建时间：2019-07-19 16:38:07 / 修改时间：16:40:07" itemprop="dateCreated datePublished" datetime="2019-07-19T16:38:07+08:00">2019-07-19</time>
             </span>
           
     
@@ -450,80 +450,28 @@
       
     
       
-        <h1 id="Java基础学习（一）"><a href="#Java基础学习（一）" class="headerlink" title="Java基础学习（一）"></a>Java基础学习（一）</h1><hr>
-<h2 id="1-Java的八大基本数据类型"><a href="#1-Java的八大基本数据类型" class="headerlink" title="1. Java的八大基本数据类型"></a>1. Java的八大基本数据类型</h2><ul>
-<li>byte<br>  8位，有符号。</li>
-<li>short<br>  16位，有符号。</li>
-<li>int<br>  32位，有符号。<a id="more"></a></li>
-<li>long<br>  64位，有符号，数字后L。</li>
-<li>float<br>  单精度，32位，不能表示精确的值（数字后有f）</li>
-<li>double<br>  双精度，64位，不能表示精确的值（数字后有d）</li>
-<li>boolean<br>  1位，仅true和false，默认为false</li>
-<li>char<br>  单一的 16 位 Unicode 字符。</li>
-</ul>
-<p>注意：数值类型的基本类型的取值范围都已经以常量的形式定义在对应的包装类中了，无需记忆。</p>
-<h2 id="2-运算符"><a href="#2-运算符" class="headerlink" title="2. 运算符"></a>2. 运算符</h2><table>
-<thead>
-<tr>
-<th>操作符</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>＆</td>
-<td>如果相对应位都是1，则结果为1，否则为0</td>
-</tr>
-<tr>
-<td>|</td>
-<td>如果相对应位都是0，则结果为0，否则为1</td>
-</tr>
-<tr>
-<td>^</td>
-<td>如果相对应位值相同，则结果为0，否则为1</td>
-</tr>
-<tr>
-<td>~</td>
-<td>按位取反运算符翻转操作数的每一位，即0变成1，1变成0。</td>
-</tr>
-<tr>
-<td>&lt;&lt;</td>
-<td>按位左移运算符。左操作数按位左移右操作数指定的位数。</td>
-</tr>
-<tr>
-<td>&gt;&gt;</td>
-<td>按位右移运算符。左操作数按位右移右操作数指定的位数。</td>
-</tr>
-<tr>
-<td>&gt;&gt;&gt;</td>
-<td>按位右移补零操作符。左操作数的值按右操作数指定的位数右移，移动得到的空位以零填充。</td>
-</tr>
-<tr>
-<td>&amp;&amp;</td>
-<td>称为逻辑与运算符。当且仅当两个操作数都为真，条件才为真。</td>
-</tr>
-<tr>
-<td>||</td>
-<td>称为逻辑或操作符。如果任何两个操作数任何一个为真，条件为真。</td>
-</tr>
-<tr>
-<td>!</td>
-<td>称为逻辑非运算符。用来反转操作数的逻辑状态。如果条件为true，则逻辑非运算符将得到false。</td>
-</tr>
-</tbody></table>
-<h3 id="短路逻辑运算符"><a href="#短路逻辑运算符" class="headerlink" title="短路逻辑运算符"></a>短路逻辑运算符</h3><p>当使用与逻辑运算符时，在两个操作数都为true时，结果才为true，但是当得到第一个操作为false时，其结果就必定是false，这时候就不会再判断第二个操作了。</p>
-<h3 id="非短路逻辑运算符"><a href="#非短路逻辑运算符" class="headerlink" title="非短路逻辑运算符"></a>非短路逻辑运算符</h3><p>非短路运算符不管第一个表达式是否可以得出最后结果,都要对第二个表达式进行判断.  </p>
-<p>所以 短路运算符只能用于逻辑表达式内，非短路运算符可用于位表达式和逻辑表达式内。也可以说：短路运算只能操作布尔型的，而非短路运算不仅可以操作布尔型，而且可以操作数值型。</p>
-<p>也可以看出短路运算符的效率更高。</p>
-<h2 id="3-循环"><a href="#3-循环" class="headerlink" title="3. 循环"></a>3. 循环</h2><p>java的循环选择结构和C语言相似，但是也有不一样的地方。</p>
-<h4 id="for循环的加强"><a href="#for循环的加强" class="headerlink" title="for循环的加强"></a>for循环的加强</h4><p>Java5 引入了一种主要用于数组的增强型 for 循环。<br>Java 增强 for 循环语法格式如下:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(声明语句 : 表达式)</span><br><span class="line">&#123;</span><br><span class="line">   <span class="comment">//代码句子</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="Java基础学习-三"><a href="#Java基础学习-三" class="headerlink" title="Java基础学习(三)"></a>Java基础学习(三)</h1><hr>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p><strong>什么是数组</strong><br>数组是一种最简单的复合数据类型，它是有序数据的集合，数组中的每个元素具有相同的数据类型，可以用一个统一的数组名和不同的下标来唯一确定数组中的元素。根据数组的维度，可以将其分为一维数组、二维数组和多维数组等。</p>
+<h2 id="数组的初始化"><a href="#数组的初始化" class="headerlink" title="数组的初始化"></a>数组的初始化</h2><pre><code>数据类型[] name = new 数据类型[长度]</code></pre><p>Java数组和C语言的数组差不多，但是功能更强大。<br>Java的数组每个元素都有默认值，默认值取决于数据类型。<br>Java数组有.length方法直接查看数组长度。</p>
+<a id="more"></a>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">text</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> [][] a = <span class="keyword">new</span> <span class="keyword">int</span> [<span class="number">3</span>][<span class="number">3</span>];</span><br><span class="line">		a[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">		a[<span class="number">1</span>][<span class="number">1</span>] = <span class="number">2</span>;</span><br><span class="line">		a[<span class="number">2</span>][<span class="number">2</span>] = <span class="number">3</span>;</span><br><span class="line">		arr_print(a);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">arr_print</span><span class="params">(<span class="keyword">int</span>[][] a)</span></span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; a[i].length; j++)</span><br><span class="line">				System.out.print(a[i][j]+<span class="string">" "</span>);</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line"><span class="number">1</span> <span class="number">0</span> <span class="number">0</span> </span><br><span class="line"><span class="number">0</span> <span class="number">2</span> <span class="number">0</span> </span><br><span class="line"><span class="number">0</span> <span class="number">0</span> <span class="number">3</span></span><br></pre></td></tr></table></figure>
 
-<p>声明语句：声明新的局部变量，该变量的类型必须和数组元素的类型匹配。其作用域限定在循环*  语句块，其值与此时数组元素的值相等。<br>表达式：表达式是要访问的数组名，或者是返回值为数组的方法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">部分代码例子<span class="number">1</span>：</span><br><span class="line"><span class="keyword">int</span> [] numbers = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;;</span><br><span class="line"> </span><br><span class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> x : numbers )&#123;</span><br><span class="line">         System.out.print( x + <span class="string">","</span>);</span><br><span class="line">      &#125;</span><br><span class="line">运行结果： <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,</span><br><span class="line"></span><br><span class="line">部分代码例子<span class="number">2</span>：</span><br><span class="line">String [] n =&#123;<span class="string">"n"</span>, <span class="string">"a"</span>, <span class="string">"m"</span>, <span class="string">"e"</span>&#125;;</span><br><span class="line">      <span class="keyword">for</span>( String n : n ) &#123;</span><br><span class="line">         System.out.print( n + <span class="string">","</span>);</span><br><span class="line">      &#125;</span><br><span class="line">运行结果： n,a,m,e,</span><br></pre></td></tr></table></figure>
+<p>上面的代码可以看出Java的length方法不仅可以看多少行，还可以看每行多少个。</p>
+<h2 id="数组的空间开辟与传递"><a href="#数组的空间开辟与传递" class="headerlink" title="数组的空间开辟与传递"></a>数组的空间开辟与传递</h2><p>数组的开辟主要是将一片默认值的地址赋值给对象（未初始化）和python一样均是将地址赋值给对象，所以会有下面的结果。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">text</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> [] a = <span class="keyword">new</span> <span class="keyword">int</span> [<span class="number">3</span>];</span><br><span class="line">		a[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">		System.out.println(a[<span class="number">0</span>]);</span><br><span class="line">		<span class="keyword">int</span>[] b = a;</span><br><span class="line">		b[<span class="number">0</span>] = <span class="number">2</span>;</span><br><span class="line">		System.out.println(a[<span class="number">0</span>]+<span class="string">" "</span>b[<span class="number">0</span>]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span> <span class="number">2</span></span><br></pre></td></tr></table></figure>
 
-<p><del>Java在这方面的加强有点类似python的for语句的用法。</del></p>
-<h2 id="4-参考文献"><a href="#4-参考文献" class="headerlink" title="4. 参考文献"></a>4. 参考文献</h2><p><a href="https://www.runoob.com" target="_blank" rel="noopener">https://www.runoob.com</a></p>
+<p>将b数组的第一个值修改后a数组的第一个值也修改了，因为<code>=</code>传递的是数组的地址。</p>
+<h2 id="Java对数组的支持"><a href="#Java对数组的支持" class="headerlink" title="Java对数组的支持"></a>Java对数组的支持</h2><ol>
+<li><p>排序<br> 数字升序排序</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//java.util.Arrays.sort(arrayname)</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>拷贝</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方法一：</span></span><br><span class="line">java.lang.System.arraycopy(object src, <span class="keyword">int</span> srcPos, object dest, <span class="keyword">int</span> destPos, <span class="keyword">int</span> length);</span><br><span class="line"><span class="comment">//方法二：</span></span><br><span class="line">java.util.Arrays.copyOf(arrayname, length);</span><br></pre></td></tr></table></figure>
 
+</li>
+</ol>
+<h2 id="对象数组"><a href="#对象数组" class="headerlink" title="对象数组"></a>对象数组</h2><p>从数组的定义可知，数组是可以存放八大基本数据之外的数据类型，比如类。<br>初始化差不多</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">类名 [] 对象数组名 = <span class="keyword">new</span> 类名[长度]；</span><br><span class="line">类名 [] 对象数组名 = <span class="keyword">new</span> 类名[] &#123;&#125;；</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -566,8 +514,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/15/markdown基本语法/" rel="next" title="markdown基本语法">
-                <i class="fa fa-chevron-left"></i> markdown基本语法
+              <a href="/2019/07/17/未解之谜/" rel="next" title="未解之谜">
+                <i class="fa fa-chevron-left"></i> 未解之谜
               </a>
             
           </div>
@@ -575,10 +523,6 @@
           <span class="post-nav-divider"></span>
     
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/17/Java基础学习-二/" rel="prev" title="Java基础学习(二)">
-                Java基础学习(二) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -770,7 +714,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java基础学习（一）"><span class="nav-number">1.</span> <span class="nav-text">Java基础学习（一）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Java的八大基本数据类型"><span class="nav-number">1.1.</span> <span class="nav-text">1. Java的八大基本数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-运算符"><span class="nav-number">1.2.</span> <span class="nav-text">2. 运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#短路逻辑运算符"><span class="nav-number">1.2.1.</span> <span class="nav-text">短路逻辑运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非短路逻辑运算符"><span class="nav-number">1.2.2.</span> <span class="nav-text">非短路逻辑运算符</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-循环"><span class="nav-number">1.3.</span> <span class="nav-text">3. 循环</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#for循环的加强"><span class="nav-number">1.3.0.1.</span> <span class="nav-text">for循环的加强</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-参考文献"><span class="nav-number">1.4.</span> <span class="nav-text">4. 参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java基础学习-三"><span class="nav-number">1.</span> <span class="nav-text">Java基础学习(三)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组"><span class="nav-number">1.1.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组的初始化"><span class="nav-number">1.2.</span> <span class="nav-text">数组的初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组的空间开辟与传递"><span class="nav-number">1.3.</span> <span class="nav-text">数组的空间开辟与传递</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java对数组的支持"><span class="nav-number">1.4.</span> <span class="nav-text">Java对数组的支持</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象数组"><span class="nav-number">1.5.</span> <span class="nav-text">对象数组</span></a></li></ol></li></ol></div>
             
 
           </div>
