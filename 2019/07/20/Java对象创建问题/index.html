@@ -103,13 +103,13 @@
 <meta property="og:site_name" content="festvslx">
 <meta property="og:description" content="对象的创建问题在Java中字符串的创建有两种方法 12String s1 = new String(&quot;abc&quot;);  //第一种String s = &quot;abc&quot;;              //第二种   第一种new时，java会去常量池里查找是否有abc，如果没有就就在堆中创建一，有的话就会把堆中的对象指向常量池的abc，在把栈里的s指向堆里的对象(该对象指向池里查里的abc)。 第二种时，J">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/07/20/Java对象创建问题/Java%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E9%97%AE%E9%A2%98/zdc1.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/20/Java对象创建问题/Java%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E9%97%AE%E9%A2%98/zdc2.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/20/Java对象创建问题/zdc1.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/20/Java对象创建问题/zdc2.png">
 <meta property="og:updated_time" content="2019-07-20T07:40:40.827Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java对象创建问题">
 <meta name="twitter:description" content="对象的创建问题在Java中字符串的创建有两种方法 12String s1 = new String(&quot;abc&quot;);  //第一种String s = &quot;abc&quot;;              //第二种   第一种new时，java会去常量池里查找是否有abc，如果没有就就在堆中创建一，有的话就会把堆中的对象指向常量池的abc，在把栈里的s指向堆里的对象(该对象指向池里查里的abc)。 第二种时，J">
-<meta name="twitter:image" content="http://yoursite.com/2019/07/20/Java对象创建问题/Java%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E9%97%AE%E9%A2%98/zdc1.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/20/Java对象创建问题/zdc1.png">
 
 
 
@@ -462,9 +462,9 @@
 </ul>
 <a id="more"></a>
 
-<p><img src="Java%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E9%97%AE%E9%A2%98/zdc1.png" alt="个人见解"></p>
+<p><img src="/2019/07/20/Java对象创建问题/zdc1.png" alt="个人见解"></p>
 <p>所以当new方法时，如果常量池里没有“abc”就会产生两个对象，有就产生一个。</p>
-<p><img src="Java%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E9%97%AE%E9%A2%98/zdc2.png" alt="个人见解"></p>
+<p><img src="/2019/07/20/Java对象创建问题/zdc2.png" alt="个人见解"></p>
 <hr>
 <h2 id="字符串连接问题"><a href="#字符串连接问题" class="headerlink" title="字符串连接问题"></a>字符串连接问题</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//问题一：</span></span><br><span class="line">String s1 = <span class="string">"abc"</span>;</span><br><span class="line">String s2 = <span class="string">"a"</span> + <span class="string">"bc"</span>;</span><br><span class="line">System.out.println(s1 == s2);</span><br><span class="line"><span class="comment">//问题二：</span></span><br><span class="line">String s3 = <span class="string">"a"</span>;</span><br><span class="line">String s4 = s3 + <span class="string">"bc"</span>;</span><br><span class="line">System.out.println(s4 == s1);</span><br></pre></td></tr></table></figure>
 
@@ -593,7 +593,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -626,7 +626,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">8</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -657,7 +661,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
