@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-28T13:29:51.435Z</updated>
+  <updated>2019-11-05T14:03:46.635Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android初识——Activity</title>
+    <link href="http://yoursite.com/2019/11/05/Android%E5%88%9D%E8%AF%86%E2%80%94%E2%80%94Activity/"/>
+    <id>http://yoursite.com/2019/11/05/Android初识——Activity/</id>
+    <published>2019-11-05T13:40:35.000Z</published>
+    <updated>2019-11-05T14:03:46.635Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Android-初识-——Activity"><a href="#Android-初识-——Activity" class="headerlink" title="Android 初识 ——Activity"></a>Android 初识 ——Activity</h1><hr><h2 id="1-Android的四大组件"><a href="#1-Android的四大组件" class="headerlink" title="1. Android的四大组件"></a>1. Android的四大组件</h2><ul><li>活动（activity）<br>  用于表现功能</li><li>服务（service），<br>  后台运行服务，不提供界面呈现</li><li>广播接受者（Broadcast Receive）<br>  接收广播</li><li>内容提供者（Content Provider）<br>  支持多个应用中存储和读取数据，相当于数据库</li></ul><a id="more"></a><hr><h2 id="2-Activity"><a href="#2-Activity" class="headerlink" title="2. Activity"></a>2. Activity</h2><p>Activity是Android的四大组件之一。是用户操作的可视化界面；它为用户提供了一个完成操作指令的窗口。当我们创建完毕Activity之后，需要调用setContentView()方法来完成界面的显示；以此来为用户提供交互的入口。在Android App 中只要能看见的几乎都要依托于Activity，所以Activity是在开发中使用最频繁的一种组件。</p><ul><li><p><strong>Android应用中每一个Activity都必须要在AndroidManifest.xml配置文件中声明，否则系统将不识别也不执行该Activity。</strong></p></li><li><p><strong>一个Activity通常就是一个单独的窗口</strong></p></li><li><p><strong>Activity跳转要靠Intent，数据传输也要靠它，数据传输时也可以把数据放到Bundle里，在放到Intent里(即putExtras(Bundle bundle)方法)</strong></p></li></ul><h2 id="3-简单的UI组件用法图-Button与Fragment-（个人见解）"><a href="#3-简单的UI组件用法图-Button与Fragment-（个人见解）" class="headerlink" title="3. 简单的UI组件用法图(Button与Fragment)（个人见解）"></a>3. 简单的UI组件用法图(Button与Fragment)（个人见解）</h2><p><img src="/2019/11/05/Android初识——Activity/Android_Activity.png" alt="个人见解"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Android-初识-——Activity&quot;&gt;&lt;a href=&quot;#Android-初识-——Activity&quot; class=&quot;headerlink&quot; title=&quot;Android 初识 ——Activity&quot;&gt;&lt;/a&gt;Android 初识 ——Activity&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;1-Android的四大组件&quot;&gt;&lt;a href=&quot;#1-Android的四大组件&quot; class=&quot;headerlink&quot; title=&quot;1. Android的四大组件&quot;&gt;&lt;/a&gt;1. Android的四大组件&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;活动（activity）&lt;br&gt;  用于表现功能&lt;/li&gt;
+&lt;li&gt;服务（service），&lt;br&gt;  后台运行服务，不提供界面呈现&lt;/li&gt;
+&lt;li&gt;广播接受者（Broadcast Receive）&lt;br&gt;  接收广播&lt;/li&gt;
+&lt;li&gt;内容提供者（Content Provider）&lt;br&gt;  支持多个应用中存储和读取数据，相当于数据库&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+      <category term="Activity" scheme="http://yoursite.com/categories/Android/Activity/"/>
+    
+    
+      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+  </entry>
   
   <entry>
     <title>leetcode刷题</title>
