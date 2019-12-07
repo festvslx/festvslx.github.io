@@ -95,18 +95,18 @@
 
 
 
-  <meta name="description" content="Java基础学习(三) 数组什么是数组数组是一种最简单的复合数据类型，它是有序数据的集合，数组中的每个元素具有相同的数据类型，可以用一个统一的数组名和不同的下标来唯一确定数组中的元素。根据数组的维度，可以将其分为一维数组、二维数组和多维数组等。 数组的初始化数据类型[] name = new 数据类型[长度]Java数组和C语言的数组差不多，但是功能更强大。Java的数组每个元素都有默认值，默认值">
-<meta name="keywords" content="Java">
+  <meta name="description" content="Android broadcast 简单的使用 什么是broadcast？ android通过广播来实现不同进程间的通信对应于广播（broadcat）还有一个广播接收器（broadcast receiver）每个广播指定了对应的action 、 type等信息，每个接收器根据这些信息来过滤是否自己要接收的广播。">
+<meta name="keywords" content="Android">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java基础学习(三)">
-<meta property="og:url" content="http://yoursite.com/2019/07/19/Java基础学习-三/index.html">
+<meta property="og:title" content="Android_Broadcast简单应用">
+<meta property="og:url" content="http://yoursite.com/2019/12/07/Android-Broadcast简单应用/index.html">
 <meta property="og:site_name" content="festvslx">
-<meta property="og:description" content="Java基础学习(三) 数组什么是数组数组是一种最简单的复合数据类型，它是有序数据的集合，数组中的每个元素具有相同的数据类型，可以用一个统一的数组名和不同的下标来唯一确定数组中的元素。根据数组的维度，可以将其分为一维数组、二维数组和多维数组等。 数组的初始化数据类型[] name = new 数据类型[长度]Java数组和C语言的数组差不多，但是功能更强大。Java的数组每个元素都有默认值，默认值">
+<meta property="og:description" content="Android broadcast 简单的使用 什么是broadcast？ android通过广播来实现不同进程间的通信对应于广播（broadcat）还有一个广播接收器（broadcast receiver）每个广播指定了对应的action 、 type等信息，每个接收器根据这些信息来过滤是否自己要接收的广播。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-19T08:40:07.810Z">
+<meta property="og:updated_time" content="2019-12-07T06:20:34.429Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java基础学习(三)">
-<meta name="twitter:description" content="Java基础学习(三) 数组什么是数组数组是一种最简单的复合数据类型，它是有序数据的集合，数组中的每个元素具有相同的数据类型，可以用一个统一的数组名和不同的下标来唯一确定数组中的元素。根据数组的维度，可以将其分为一维数组、二维数组和多维数组等。 数组的初始化数据类型[] name = new 数据类型[长度]Java数组和C语言的数组差不多，但是功能更强大。Java的数组每个元素都有默认值，默认值">
+<meta name="twitter:title" content="Android_Broadcast简单应用">
+<meta name="twitter:description" content="Android broadcast 简单的使用 什么是broadcast？ android通过广播来实现不同进程间的通信对应于广播（broadcat）还有一个广播接收器（broadcast receiver）每个广播指定了对应的action 、 type等信息，每个接收器根据这些信息来过滤是否自己要接收的广播。">
 
 
 
@@ -116,7 +116,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/07/19/Java基础学习-三/">
+  <link rel="canonical" href="http://yoursite.com/2019/12/07/Android-Broadcast简单应用/">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>Java基础学习(三) | festvslx</title>
+  <title>Android_Broadcast简单应用 | festvslx</title>
   
 
 
@@ -333,7 +333,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/19/Java基础学习-三/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/07/Android-Broadcast简单应用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="festvslx">
@@ -350,7 +350,7 @@
     
         
         
-          <h1 class="post-title" itemprop="name headline">Java基础学习(三)
+          <h1 class="post-title" itemprop="name headline">Android_Broadcast简单应用
 
               
             
@@ -376,7 +376,7 @@
                 
               
     
-              <time title="创建时间：2019-07-19 16:38:07 / 修改时间：16:40:07" itemprop="dateCreated datePublished" datetime="2019-07-19T16:38:07+08:00">2019-07-19</time>
+              <time title="创建时间：2019-12-07 13:59:21 / 修改时间：14:20:34" itemprop="dateCreated datePublished" datetime="2019-12-07T13:59:21+08:00">2019-12-07</time>
             </span>
           
     
@@ -395,14 +395,14 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
     
                 
                 
                   ，
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/基础/" itemprop="url" rel="index"><span itemprop="name">基础</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Android/Broadcast/" itemprop="url" rel="index"><span itemprop="name">Broadcast</span></a></span>
     
                 
                 
@@ -450,28 +450,34 @@
       
     
       
-        <h1 id="Java基础学习-三"><a href="#Java基础学习-三" class="headerlink" title="Java基础学习(三)"></a>Java基础学习(三)</h1><hr>
-<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p><strong>什么是数组</strong><br>数组是一种最简单的复合数据类型，它是有序数据的集合，数组中的每个元素具有相同的数据类型，可以用一个统一的数组名和不同的下标来唯一确定数组中的元素。根据数组的维度，可以将其分为一维数组、二维数组和多维数组等。</p>
-<h2 id="数组的初始化"><a href="#数组的初始化" class="headerlink" title="数组的初始化"></a>数组的初始化</h2><pre><code>数据类型[] name = new 数据类型[长度]</code></pre><p>Java数组和C语言的数组差不多，但是功能更强大。<br>Java的数组每个元素都有默认值，默认值取决于数据类型。<br>Java数组有.length方法直接查看数组长度。</p>
+        <h1 id="Android-broadcast-简单的使用"><a href="#Android-broadcast-简单的使用" class="headerlink" title="Android broadcast 简单的使用"></a>Android broadcast 简单的使用</h1><hr>
+<h2 id="什么是broadcast？"><a href="#什么是broadcast？" class="headerlink" title="什么是broadcast？"></a>什么是broadcast？</h2><blockquote>
+<p>android通过广播来实现不同进程间的通信对应于广播（broadcat）还有一个广播接收器（broadcast receiver）每个广播指定了对应的action 、 type等信息，每个接收器根据这些信息来过滤是否自己要接收的广播。</p>
+</blockquote>
 <a id="more"></a>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">text</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> [][] a = <span class="keyword">new</span> <span class="keyword">int</span> [<span class="number">3</span>][<span class="number">3</span>];</span><br><span class="line">		a[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">		a[<span class="number">1</span>][<span class="number">1</span>] = <span class="number">2</span>;</span><br><span class="line">		a[<span class="number">2</span>][<span class="number">2</span>] = <span class="number">3</span>;</span><br><span class="line">		arr_print(a);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">arr_print</span><span class="params">(<span class="keyword">int</span>[][] a)</span></span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; a[i].length; j++)</span><br><span class="line">				System.out.print(a[i][j]+<span class="string">" "</span>);</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line"><span class="number">1</span> <span class="number">0</span> <span class="number">0</span> </span><br><span class="line"><span class="number">0</span> <span class="number">2</span> <span class="number">0</span> </span><br><span class="line"><span class="number">0</span> <span class="number">0</span> <span class="number">3</span></span><br></pre></td></tr></table></figure>
 
-<p>上面的代码可以看出Java的length方法不仅可以看多少行，还可以看每行多少个。</p>
-<h2 id="数组的空间开辟与传递"><a href="#数组的空间开辟与传递" class="headerlink" title="数组的空间开辟与传递"></a>数组的空间开辟与传递</h2><p>数组的开辟主要是将一片默认值的地址赋值给对象（未初始化）和python一样均是将地址赋值给对象，所以会有下面的结果。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">text</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> [] a = <span class="keyword">new</span> <span class="keyword">int</span> [<span class="number">3</span>];</span><br><span class="line">		a[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">		System.out.println(a[<span class="number">0</span>]);</span><br><span class="line">		<span class="keyword">int</span>[] b = a;</span><br><span class="line">		b[<span class="number">0</span>] = <span class="number">2</span>;</span><br><span class="line">		System.out.println(a[<span class="number">0</span>]+<span class="string">" "</span>b[<span class="number">0</span>]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span> <span class="number">2</span></span><br></pre></td></tr></table></figure>
-
-<p>将b数组的第一个值修改后a数组的第一个值也修改了，因为<code>=</code>传递的是数组的地址。</p>
-<h2 id="Java对数组的支持"><a href="#Java对数组的支持" class="headerlink" title="Java对数组的支持"></a>Java对数组的支持</h2><ol>
-<li><p>排序<br> 数字升序排序</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//java.util.Arrays.sort(arrayname)</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>拷贝</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方法一：</span></span><br><span class="line">java.lang.System.arraycopy(object src, <span class="keyword">int</span> srcPos, object dest, <span class="keyword">int</span> destPos, <span class="keyword">int</span> length);</span><br><span class="line"><span class="comment">//方法二：</span></span><br><span class="line">java.util.Arrays.copyOf(arrayname, length);</span><br></pre></td></tr></table></figure>
+<h3 id="broadcast-receiver"><a href="#broadcast-receiver" class="headerlink" title="broadcast receiver"></a>broadcast receiver</h3><hr>
+<p>广播接收器主要分为两种类型：标准广播 和 有序广播</p>
+<p>而标准广播的注册方法又有<strong>动态注册</strong>和<strong>静态注册</strong>。</p>
+<ul>
+<li>动态注册<br>定义广播时首先要有广播<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = <span class="keyword">new</span> Intent();</span><br><span class="line"><span class="comment">// 创建一个新的intent</span></span><br><span class="line">intent.setAction(<span class="string">"action1"</span>);</span><br><span class="line"><span class="comment">// 为intent添加action字段进行标识</span></span><br><span class="line">sendBroadcast(intent);</span><br><span class="line"><span class="comment">// 发送广播</span></span><br></pre></td></tr></table></figure>
 
 </li>
-</ol>
-<h2 id="对象数组"><a href="#对象数组" class="headerlink" title="对象数组"></a>对象数组</h2><p>从数组的定义可知，数组是可以存放八大基本数据之外的数据类型，比如类。<br>初始化差不多</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">类名 [] 对象数组名 = <span class="keyword">new</span> 类名[长度]；</span><br><span class="line">类名 [] 对象数组名 = <span class="keyword">new</span> 类名[] &#123;&#125;；</span><br></pre></td></tr></table></figure>
+</ul>
+<p>有广播后没有人接收也没有用啊，所以要有接收器。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">IntentFilter filter = <span class="keyword">new</span> IntentFilter();</span><br><span class="line">filter.addAction(ACTION1);</span><br><span class="line">registerReceiver(receiver,filter);</span><br></pre></td></tr></table></figure>
+
+<p>receiver的注册中有一个receiver</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">BroadcastReceiver receiver = <span class="keyword">new</span> BroadcastReceiver() &#123;</span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onReceive</span><span class="params">(Context context, Intent intent)</span> </span>&#123;</span><br><span class="line">      <span class="comment">// 在此处经行接收时的操作</span></span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样就完成了动态注册<br>还有一个比较重要的地方，就是注册使用完后要把广播销毁。所以重写onDestroy方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unregisterReceiver(receiver);<span class="comment">//加入这一行即可</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<ul>
+<li>静态注册<br>在比较高的Android studio里，静态注册十分的严格，而大部分的广播都是可以用动态注册解决的，所以就不写了。<del>懒</del></li>
+</ul>
+
       
     </div>
     
@@ -501,7 +507,7 @@
         
         <div class="post-tags">
           
-            <a href="/tags/Java/" rel="tag"># Java</a>
+            <a href="/tags/Android/" rel="tag"># Android</a>
           
         </div>
       
@@ -514,8 +520,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/17/未解之谜/" rel="next" title="未解之谜">
-                <i class="fa fa-chevron-left"></i> 未解之谜
+              <a href="/2019/11/05/Android初识——Activity/" rel="next" title="Android初识——Activity">
+                <i class="fa fa-chevron-left"></i> Android初识——Activity
               </a>
             
           </div>
@@ -523,10 +529,6 @@
           <span class="post-nav-divider"></span>
     
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/20/休克/" rel="prev" title="休克">
-                休克 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -740,7 +742,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java基础学习-三"><span class="nav-number">1.</span> <span class="nav-text">Java基础学习(三)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组"><span class="nav-number">1.1.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组的初始化"><span class="nav-number">1.2.</span> <span class="nav-text">数组的初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组的空间开辟与传递"><span class="nav-number">1.3.</span> <span class="nav-text">数组的空间开辟与传递</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java对数组的支持"><span class="nav-number">1.4.</span> <span class="nav-text">Java对数组的支持</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象数组"><span class="nav-number">1.5.</span> <span class="nav-text">对象数组</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Android-broadcast-简单的使用"><span class="nav-number">1.</span> <span class="nav-text">Android broadcast 简单的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是broadcast？"><span class="nav-number">1.1.</span> <span class="nav-text">什么是broadcast？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#broadcast-receiver"><span class="nav-number">1.1.1.</span> <span class="nav-text">broadcast receiver</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
